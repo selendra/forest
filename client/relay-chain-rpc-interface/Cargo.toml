@@ -1,0 +1,32 @@
+[package]
+name = "forest-relay-chain-rpc-interface"
+version = "0.1.0"
+authors = ["Selendra <info@selendra.org>"]
+edition = "2021"
+
+
+[dependencies]
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
+
+forest-primitives-core = { path = "../../primitives/core" }
+forest-relay-chain-interface = { path = "../relay-chain-interface" }
+
+sp-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-consensus-babe = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-authority-discovery = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-storage = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-rpc-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+tokio = { version = "1.21.2", features = ["sync"] }
+
+futures = "0.3.24"
+futures-timer = "3.0.2"
+parity-scale-codec = "3.2.1"
+jsonrpsee = { version = "0.15.1", features = ["ws-client"] }
+tracing = "0.1.37"
+async-trait = "0.1.58"
+url = "2.3.1"
+backoff = { version = "0.4.0", features = ["tokio"] }

@@ -1,0 +1,50 @@
+[package]
+name = "forest-relay-chain-minimal-node"
+version = "0.1.0"
+authors = ["Selendra <info@selendra.org>"]
+edition = "2021"
+
+[dependencies]
+# selendra deps
+selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-core-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-overseer = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-node-subsystem-util = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-node-network-protocol = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-network-bridge = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-node-core-av-store = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-availability-distribution = { git = "https://github.com/selendra/selendra", branch = "master" }
+
+# substrate deps
+sc-authority-discovery = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-keystore = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-network = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-network-sync = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-network-common = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-network-light = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-service = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-transaction-pool-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-tracing = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-telemetry = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-consensus-babe = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+
+# forest deps
+forest-relay-chain-interface = { path = "../relay-chain-interface" }
+forest-relay-chain-rpc-interface = { path = "../relay-chain-rpc-interface" }
+forest-primitives-core = { path = "../../primitives/core" }
+
+array-bytes = "4.1"
+lru = "0.8"
+tracing = "0.1.37"
+async-trait = "0.1.58"
+futures = "0.3.24"
+url = "2.2.2"
+tokio = { version = "1.21.2", features = ["macros"] }

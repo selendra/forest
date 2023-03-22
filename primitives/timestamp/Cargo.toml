@@ -1,0 +1,39 @@
+[package]
+name = "forest-primitives-timestamp"
+version = "0.1.0"
+authors = ["Selendra <info@selendra.org>"]
+edition = "2021"
+description = "Provides timestamp related functionality for parachains."
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = [ "derive" ] }
+futures = "0.3.24"
+
+# Substrate
+sp-inherents = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-std = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-timestamp = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+
+# Forest
+forest-primitives-core = { path = "../core", default-features = false }
+
+[dev-dependencies]
+
+# Substrate
+sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-tracing = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+
+# Forest
+forest-test-client = { path = "../../test/client" }
+forest-test-relay-sproof-builder = { path = "../../test/relay-sproof-builder" }
+
+
+[features]
+default = [ "std" ]
+std = [
+	"sp-inherents/std",
+	"sp-std/std",
+	"sp-timestamp/std",
+	"forest-primitives-core/std",
+]

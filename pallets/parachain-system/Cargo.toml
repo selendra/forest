@@ -1,0 +1,76 @@
+[package]
+name = "forest-pallet-parachain-system"
+version = "0.1.0"
+authors = ["Selendra <info@selendra.org>"]
+edition = "2021"
+description = "Base pallet for forest-based parachains"
+
+[dependencies]
+bytes = { version = "1.2.1", default-features = false }
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = ["derive"] }
+environmental = { version = "1.1.2", default-features = false }
+impl-trait-for-tuples = "0.2.1"
+log = { version = "0.4.17", default-features = false }
+scale-info = { version = "2.3.0", default-features = false, features = ["derive"] }
+
+# Substrate
+frame-support = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+frame-system = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-core = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-externalities = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-inherents = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-io = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-state-machine = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-std = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-trie = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-version = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+
+# Selendra
+selendra-parachain = { git = "https://github.com/selendra/selendra", default-features = false, features = [ "wasm-api" ], branch = "master" }
+
+# Forest
+forest-pallet-parachain-system-proc-macro = { path = "proc-macro", default-features = false }
+forest-primitives-core = { path = "../../primitives/core", default-features = false }
+forest-primitives-parachain-inherent = { path = "../../primitives/parachain-inherent", default-features = false }
+
+[dev-dependencies]
+hex-literal = "0.3.4"
+lazy_static = "1.4"
+
+# Substrate
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-keyring = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-tracing = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-version = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+
+# Forest
+forest-test-client = { path = "../../test/client" }
+forest-test-relay-sproof-builder = { path = "../../test/relay-sproof-builder" }
+
+[features]
+default = [ "std" ]
+std = [
+	"codec/std",
+	"environmental/std",
+	"log/std",
+	"scale-info/std",
+	"forest-pallet-parachain-system-proc-macro/std",
+	"forest-primitives-core/std",
+	"forest-primitives-parachain-inherent/std",
+	"frame-support/std",
+	"frame-system/std",
+	"sp-core/std",
+	"sp-externalities/std",
+	"sp-io/std",
+	"sp-runtime/std",
+	"sp-state-machine/std",
+	"sp-std/std",
+	"sp-trie/std",
+]
+
+runtime-benchmarks = [
+	"sp-runtime/runtime-benchmarks"
+]
+
+try-runtime = ["frame-support/try-runtime"]

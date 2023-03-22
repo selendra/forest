@@ -1,0 +1,29 @@
+[package]
+name = "forest-test-relay-sproof-builder"
+version = "0.1.0"
+authors = ["Selendra <info@selendra.org>"]
+edition = "2021"
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = [ "derive" ] }
+
+# Substrate
+sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-state-machine = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+sp-std = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
+
+# Selendra
+selendra-primitives = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
+
+# Forest
+forest-primitives-core = { path = "../../primitives/core", default-features = false }
+
+[features]
+default = [ "std" ]
+std = [
+	"codec/std",
+	"sp-runtime/std",
+	"sp-state-machine/std",
+	"sp-std/std",
+	"forest-primitives-core/std",
+]

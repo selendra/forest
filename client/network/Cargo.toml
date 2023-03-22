@@ -1,0 +1,54 @@
+[package]
+name = "forest-client-network"
+version = "0.1.0"
+authors = ["Selendra <info@selendra.org>"]
+description = "Forest-specific networking protocol"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.58"
+codec = { package = "parity-scale-codec", version = "3.0.0", features = [ "derive" ] }
+futures = "0.3.24"
+futures-timer = "3.0.2"
+parking_lot = "0.12.1"
+tracing = "0.1.37"
+
+# Substrate
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+
+# Selendra
+selendra-node-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-parachain = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
+
+# Forest
+forest-relay-chain-interface = { path = "../relay-chain-interface" }
+
+[dev-dependencies]
+portpicker = "0.1.1"
+tokio = { version = "1.21.2", features = ["macros"] }
+url = "2.3.1"
+
+# Substrate
+sc-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-keyring = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-keystore = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+substrate-test-utils = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+
+# Selendra
+selendra-client = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-test-client = { git = "https://github.com/selendra/selendra", branch = "master" }
+
+# Forest
+forest-primitives-core = { path = "../../primitives/core" }
+forest-relay-chain-inprocess-interface = { path = "../relay-chain-inprocess-interface" }
+forest-test-service = { path = "../../test/service" }

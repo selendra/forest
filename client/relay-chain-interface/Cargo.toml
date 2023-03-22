@@ -1,0 +1,22 @@
+[package]
+authors = ["Selendra <info@selendra.org>"]
+version = "0.1.0"
+name = "forest-relay-chain-interface"
+edition = "2021"
+
+[dependencies]
+selendra-overseer = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
+
+forest-primitives-core = { path = "../../primitives/core" }
+
+sp-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+
+futures = "0.3.24"
+async-trait = "0.1.58"
+thiserror = "1.0.37"
+jsonrpsee-core = "0.15.1"
+parity-scale-codec = "3.2.1"

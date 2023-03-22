@@ -1,0 +1,29 @@
+[package]
+name = "forest-client-service"
+version = "0.1.0"
+authors = ["Selendra <info@selendra.org>"]
+edition = "2021"
+
+[dependencies]
+parking_lot = "0.12.1"
+
+# Substrate
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sc-service = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
+
+# Selendra
+selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
+
+# Forest
+forest-client-cli = { path = "../cli" }
+forest-client-collator = { path = "../collator" }
+forest-client-consensus-common = { path = "../consensus/common" }
+forest-client-pov-recovery = { path = "../pov-recovery" }
+forest-primitives-core = { path = "../../primitives/core" }
+forest-relay-chain-interface = { path = "../relay-chain-interface" }
