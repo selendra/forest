@@ -18,10 +18,10 @@ sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-
 sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
 
 # Selendra
-selendra-node-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-node-subsystem = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-overseer = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-node-primitives = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-node-subsystem = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-overseer = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 # Forest
 forest-client-consensus-common = { path = "../consensus/common" }
@@ -37,7 +37,7 @@ sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "
 sp-tracing = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
 
 # Selendra
-selendra-node-subsystem-test-helpers = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-node-subsystem-test-helpers = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 # Forest
 forest-test-client = { path = "../../test/client" }

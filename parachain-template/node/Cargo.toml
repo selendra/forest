@@ -51,10 +51,10 @@ substrate-prometheus-endpoint = { git = "https://github.com/paritytech/substrate
 try-runtime-cli = { git = "https://github.com/paritytech/substrate", optional = true , branch = "polkadot-v0.9.33" }
 
 # Selendra
-selendra-cli = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
-xcm = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
+selendra-cli = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+xcm = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
 
 # Forest
 forest-client-cli = { path = "../../client/cli" }

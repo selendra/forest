@@ -27,7 +27,7 @@ sp-trie = { git = "https://github.com/paritytech/substrate", default-features = 
 sp-version = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
 
 # Selendra
-selendra-parachain = { git = "https://github.com/selendra/selendra", default-features = false, features = [ "wasm-api" ], branch = "master" }
+selendra-parachain = { git = "https://github.com/selendra/selendra", default-features = false, features = [ "wasm-api" ], branch = "release-0.3.0" }
 
 # Forest
 forest-pallet-parachain-system-proc-macro = { path = "proc-macro", default-features = false }

@@ -50,10 +50,10 @@ substrate-test-client = { git = "https://github.com/paritytech/substrate", branc
 sc-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
 
 # Selendra
-selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-test-service = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-cli = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-test-service = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-cli = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 # Forest
 forest-client-cli = { path = "../../client/cli" }
@@ -76,7 +76,7 @@ futures = "0.3.24"
 portpicker = "0.1.1"
 
 # Selendra dependencies
-selendra-test-service = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-test-service = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 # Substrate dependencies
 sc-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }

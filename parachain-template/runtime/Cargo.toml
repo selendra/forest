@@ -50,12 +50,12 @@ sp-transaction-pool = { git = "https://github.com/paritytech/substrate", default
 sp-version = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
 
 # Selendra
-pallet-xcm = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
-selendra-parachain = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
-selendra-runtime-common = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
-xcm = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
-xcm-builder = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
-xcm-executor = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
+pallet-xcm = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
+selendra-parachain = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
+selendra-runtime-common = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
+xcm = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
+xcm-builder = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
+xcm-executor = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
 
 # Forest
 forest-pallet-aura-ext = { path = "../../pallets/aura-ext", default-features = false }

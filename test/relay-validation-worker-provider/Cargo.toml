@@ -8,7 +8,7 @@ build = "build.rs"
 [dependencies]
 
 # Selendra
-selendra-node-core-pvf = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-node-core-pvf = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 [build-dependencies]
 toml = "0.5.9"

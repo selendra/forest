@@ -5,8 +5,8 @@ name = "forest-relay-chain-interface"
 edition = "2021"
 
 [dependencies]
-selendra-overseer = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-overseer = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 forest-primitives-core = { path = "../../primitives/core" }
 

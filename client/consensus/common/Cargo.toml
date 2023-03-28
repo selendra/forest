@@ -21,7 +21,7 @@ sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkad
 sp-trie = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
 
 # Selendra
-selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 # Forest
 forest-relay-chain-interface = { path = "../../relay-chain-interface" }

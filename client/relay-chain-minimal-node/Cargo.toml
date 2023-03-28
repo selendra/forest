@@ -6,15 +6,15 @@ edition = "2021"
 
 [dependencies]
 # selendra deps
-selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-core-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-overseer = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-node-subsystem-util = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-node-network-protocol = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-network-bridge = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-node-core-av-store = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-availability-distribution = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-core-primitives = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-overseer = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-node-subsystem-util = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-node-network-protocol = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-network-bridge = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-node-core-av-store = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-availability-distribution = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 # substrate deps
 sc-authority-discovery = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }

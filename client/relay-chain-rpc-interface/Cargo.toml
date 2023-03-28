@@ -6,7 +6,7 @@ edition = "2021"
 
 
 [dependencies]
-selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 forest-primitives-core = { path = "../../primitives/core" }
 forest-relay-chain-interface = { path = "../relay-chain-interface" }

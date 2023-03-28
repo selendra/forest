@@ -14,9 +14,9 @@ sp-std = { git = "https://github.com/paritytech/substrate", default-features = f
 sp-trie = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
 
 # Selendra
-selendra-core-primitives = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
-selendra-parachain = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
-selendra-primitives = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
+selendra-core-primitives = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
+selendra-parachain = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
+selendra-primitives = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
 
 [features]
 default = [ "std" ]

@@ -22,9 +22,9 @@ sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkad
 sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
 
 # Selendra
-selendra-node-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-parachain = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-node-primitives = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-parachain = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-primitives = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 # Forest
 forest-relay-chain-interface = { path = "../relay-chain-interface" }
@@ -44,9 +44,9 @@ sp-keystore = { git = "https://github.com/paritytech/substrate", branch = "polka
 substrate-test-utils = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.33" }
 
 # Selendra
-selendra-client = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-service = { git = "https://github.com/selendra/selendra", branch = "master" }
-selendra-test-client = { git = "https://github.com/selendra/selendra", branch = "master" }
+selendra-client = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-service = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
+selendra-test-client = { git = "https://github.com/selendra/selendra", branch = "release-0.3.0" }
 
 # Forest
 forest-primitives-core = { path = "../../primitives/core" }

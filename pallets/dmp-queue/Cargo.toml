@@ -17,7 +17,7 @@ sp-runtime = { git = "https://github.com/paritytech/substrate", default-features
 sp-std = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.33" }
 
 # Selendra
-xcm = { git = "https://github.com/selendra/selendra", default-features = false, branch = "master" }
+xcm = { git = "https://github.com/selendra/selendra", default-features = false, branch = "release-0.3.0" }
 
 # Forest
 forest-primitives-core = { path = "../../primitives/core", default-features = false }
